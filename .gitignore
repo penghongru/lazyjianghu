@@ -6,5 +6,3 @@
 /build
 /captures
 .externalNativeBuild
-libs/
-src/main/java/com/hongru/lazy/events/

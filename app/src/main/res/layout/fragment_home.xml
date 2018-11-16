@@ -54,6 +54,7 @@
             android:id="@+id/tv_designation_tag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="【称号】"
             android:textColor="#fff"
             android:textSize="16sp"
@@ -68,11 +69,101 @@
             android:textStyle="bold"
             app:layout_constraintBaseline_toBaselineOf="@id/tv_designation_tag"
             app:layout_constraintLeft_toRightOf="@id/tv_designation_tag"
-            tool:text="普通百姓"/>
+            android:text="普通百姓"/>
 
         <TextView
+            android:id="@+id/tv_user_name_tag"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="【姓名】"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/tv_designation_tag"
+            app:layout_constraintTop_toBottomOf="@id/tv_designation_tag"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_user_name_tag"
+            app:layout_constraintLeft_toRightOf="@id/tv_designation_tag"
+            android:text="彭鸿儒"/>
+
+        <ImageView
+            android:id="@+id/iv_user_face"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="20dp"
+            android:src="@color/colorPrimary"
+            app:layout_constraintDimensionRatio="W,1:1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_designation_tag"
+            app:layout_constraintWidth_percent="0.25"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <TextView
+            android:id="@+id/tv_experience_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="【经验】"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_user_face"/>
+
+        <TextView
+            android:id="@+id/tv_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_experience_tag"
+            app:layout_constraintLeft_toRightOf="@id/tv_experience_tag"
+            app:layout_constraintRight_toLeftOf="@id/gl_50"/>
+
+        <TextView
+            android:id="@+id/tv_potential_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【潜力】"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_experience"
+            app:layout_constraintLeft_toLeftOf="@id/gl_50"/>
+
+        <TextView
+            android:id="@+id/tv_potential"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_potential_tag"
+            app:layout_constraintLeft_toRightOf="@id/tv_potential_tag"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+
 
 
     </android.support.constraint.ConstraintLayout>
